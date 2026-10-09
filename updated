@@ -161,6 +161,7 @@ def gamemenu():
     global choice6;
     global choice2;
     global gg;
+    global choice4;
     
     gg=0;
     match choice1:
@@ -449,7 +450,7 @@ def gamemenu():
                                     mappy=0;
                                     mapu=1;
                                 else:
-                                    print("MAP NOT UNLOCKED YET");
+                                    print("MAP NOT UNLOCKED YET, DEFEAT HARD MODE OF THE 1ST MAP");
                                     maps=0;
                                     repeat=0;
                                     mapu=0;
@@ -460,7 +461,7 @@ def gamemenu():
                                     mappy=0;
                                     mapu=1;
                                 else:
-                                    print("MAP NOT UNLOCKED YET");
+                                    print("MAP NOT UNLOCKED YET, DEFEAT HARD MODE OF THE 2ND MAP");
                                     maps=0;
                                     repeat=0;
                                     mapu=0;
@@ -517,7 +518,7 @@ def gamemenu():
                               case 5:
                                  gg=0;
                                  x=1;
-                                 return;
+                                 return; 
                               case _:
                                   print("INVALID CHOICE!");
                                   repeat=1;
@@ -934,10 +935,6 @@ while x==1:
              print("FIGHT!");
              fight();
              retry();
-             while next==1:
-                 print("FIGHT!");
-                 fight2();
-                 retry2();  
              
 
              
@@ -951,5 +948,3 @@ while x==1:
          c=1 
          map2=1
          map3=1
-           
-          
